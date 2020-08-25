@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "d8d2dcbd-14f0-4474-abcf-c11e6e3ce255",
+		"name": "churrasco",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjEyODA5ZGQyMzlkMjRiZDM3OWMwYWQxOTFmOGIwZWRjZGI5ZDM5MTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbm9kZWNoYWxsZW5nZS00MjRjMSIsImF1ZCI6Im5vZGVjaGFsbGVuZ2UtNDI0YzEiLCJhdXRoX3RpbWUiOjE1OTgzMDI0NTksInVzZXJfaWQiOiJTNUhpdzI1SnBTVlBnb3VueG16VkNmQzNnc2QyIiwic3ViIjoiUzVIaXcyNUpwU1ZQZ291bnhtelZDZkMzZ3NkMiIsImlhdCI6MTU5ODMwMjQ1OSwiZXhwIjoxNTk4MzA2MDU5LCJlbWFpbCI6ImNoYWxsZW5nZUBjaHVycmFzY28uY2MiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiY2hhbGxlbmdlQGNodXJyYXNjby5jYyJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.an1rJ_sBQebCiujRvGHwGaG7w7NVFbwC7SitvOYMdsY-wSoNw3sbco7hDKkzXb7PHKVm82NN3XNcizj45fTFwM1RbZo1S8zvZ1rZ1-YCxHOpfyYT3FMbzSbtqT_jCX-4a-Rz80ZlzTfLDekq5amqCZ0DnTYS7wn6c1iQNWp0rSGlO03wfW3gi--524c75Nfp3qGx8EL9ngC9VNPNEc4DLZX8t0HmdRBTwecRYdVtcunOuDDJKv3MiPI37i9NK_FOT-wMMnc7a7xDe_Oqm3aeMmVEwKMfZ7bBy7rKCGScZ7D2_N4z0Q-EE0mQQ5gi9hI5i3E6IqL3Yr4ZXfiEQwnsdw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Usuario\": \"challenge@churrasco.cc\",\n    \"Password\": \"Challenge.2019\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSitiosInteres",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjEyODA5ZGQyMzlkMjRiZDM3OWMwYWQxOTFmOGIwZWRjZGI5ZDM5MTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbm9kZWNoYWxsZW5nZS00MjRjMSIsImF1ZCI6Im5vZGVjaGFsbGVuZ2UtNDI0YzEiLCJhdXRoX3RpbWUiOjE1OTgzNjU4OTQsInVzZXJfaWQiOiJTNUhpdzI1SnBTVlBnb3VueG16VkNmQzNnc2QyIiwic3ViIjoiUzVIaXcyNUpwU1ZQZ291bnhtelZDZkMzZ3NkMiIsImlhdCI6MTU5ODM2NTg5NSwiZXhwIjoxNTk4MzY5NDk1LCJlbWFpbCI6ImNoYWxsZW5nZUBjaHVycmFzY28uY2MiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiY2hhbGxlbmdlQGNodXJyYXNjby5jYyJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.XSE2YwMlXBmE4ldWVKXO1tuQGUYVs_7S2eTgp7gXbZMumxV3Rz01pxgpA_JU8OmX1jrVXcHkhZsLBZOFmyGSZtOb6ndL_GR6Qg2aDAmalicUugT0HhfrwD_cBJtcztn9j_FgkWDjOA6tu348J26nLQStkf7MXwmE0f2uuif_ktcHNkN_81TZjki5HsHCevodtPrGFCxYhNx9RNDABk2xwaAtp8Ltk2K-7u4S_SdE2lhIWCT-lDY-2xroaugY6Zkiyn4E9RkSjc02eCQqxg82o6tWhDH-cO9pyF95xTrpjKNxvpSYdnHEnJK6Be6Mh7ucyzrDjIBWYmB82qsk2DJ4zw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:3000/sitiosInteres?limite=1000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sitiosInteres"
+					],
+					"query": [
+						{
+							"key": "limite",
+							"value": "1000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AgregarSitioInteres",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjEyODA5ZGQyMzlkMjRiZDM3OWMwYWQxOTFmOGIwZWRjZGI5ZDM5MTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbm9kZWNoYWxsZW5nZS00MjRjMSIsImF1ZCI6Im5vZGVjaGFsbGVuZ2UtNDI0YzEiLCJhdXRoX3RpbWUiOjE1OTgzMjYyMDMsInVzZXJfaWQiOiJTNUhpdzI1SnBTVlBnb3VueG16VkNmQzNnc2QyIiwic3ViIjoiUzVIaXcyNUpwU1ZQZ291bnhtelZDZkMzZ3NkMiIsImlhdCI6MTU5ODMyNjIwNCwiZXhwIjoxNTk4MzI5ODA0LCJlbWFpbCI6ImNoYWxsZW5nZUBjaHVycmFzY28uY2MiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiY2hhbGxlbmdlQGNodXJyYXNjby5jYyJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.nRYzBfGddJTg4byfQ5X-pUXUoYJcFGjr3ryI9Vf0PjWRLcxpt8a2sLo8T46L3GlcWD3jyLWPdgMoM31SySgiIR8S6BOyqsU-VqrEK_lU0z418curMR-_KnY9-oiahAgVkJc45QMEKPMPTvOr4b5fuM0AZnv9z84tdC3h-slv7NZdKgIy3J6Af1soG_4tLjk1ZNTC44MLgMgIWLvozcDWrHlI7-ewx1m3t-lFQn2gmx-SCwHJA2VCfprkBKejEnvFlBcMG7vuaoei3dwRYwFYPZ7usbNudKfBO4Vs73s_idauNwgCxL1NHsd7oxLF9OYUjAUptG1cJgPZaTsC26dEGQ"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ubicacion\": {\n                \"_long\": \"-64.19645\",\n                \"_lat\": -31.40907\n            },\n            \"nombre\": \"Hospital Universitario de Paternidad Piso 4\",\n            \"url_imagen\": \"https://maternidad.fcm.unc.edu.ar/wp-content/uploads/sites/20/2019/08/DSC_02187.jpg\",\n            \"descripcion\": \"El Hospital cuenta con cinco Servicios-Cátedras que conforman una unidad asistencial.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/sitiosInteres",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sitiosInteres"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSitioInteresXNombre",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjEyODA5ZGQyMzlkMjRiZDM3OWMwYWQxOTFmOGIwZWRjZGI5ZDM5MTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbm9kZWNoYWxsZW5nZS00MjRjMSIsImF1ZCI6Im5vZGVjaGFsbGVuZ2UtNDI0YzEiLCJhdXRoX3RpbWUiOjE1OTgzNjcyNzAsInVzZXJfaWQiOiJTNUhpdzI1SnBTVlBnb3VueG16VkNmQzNnc2QyIiwic3ViIjoiUzVIaXcyNUpwU1ZQZ291bnhtelZDZkMzZ3NkMiIsImlhdCI6MTU5ODM2NzI3MSwiZXhwIjoxNTk4MzcwODcxLCJlbWFpbCI6ImNoYWxsZW5nZUBjaHVycmFzY28uY2MiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiY2hhbGxlbmdlQGNodXJyYXNjby5jYyJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.kB660R_0UsHs_yeZCcq1A0NdFKnpbeIfqlktfSSpGQmvncN7uY6u-mPOkhHna3Rk7GAcm7MKBzCbLBArmxTkIdpYq5anzUreGayzwhgfSaCnCjE1LPMsBKzM4-RYpGCI95SgMa7tdNjf8C1uI3dVMukcVWW8cIAf7uLSepbD4elFgZw7elvernRdAjdGEEo7m0M3mUBNpZzpIBJd49chbn9S5vTCG0QYQXBitAn0s0Oq5pEZ6jeW_IFeon6QTX3RD2RmLTR7wp30ugqYftpdJei8S3WaNkR_XkoEVg-7S1MBChmyQPG2fG2wTQNKbsXjHGAk9JtmWmzfenE8d4ZhWg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/sitiosInteres/nombre?nombre=Hospital Universitario de Maternidad y Neonatología Piso 3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sitiosInteres",
+						"nombre"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "Hospital Universitario de Maternidad y Neonatología Piso 3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizarSitioInteres",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjEyODA5ZGQyMzlkMjRiZDM3OWMwYWQxOTFmOGIwZWRjZGI5ZDM5MTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbm9kZWNoYWxsZW5nZS00MjRjMSIsImF1ZCI6Im5vZGVjaGFsbGVuZ2UtNDI0YzEiLCJhdXRoX3RpbWUiOjE1OTgzNjQ0MzUsInVzZXJfaWQiOiJTNUhpdzI1SnBTVlBnb3VueG16VkNmQzNnc2QyIiwic3ViIjoiUzVIaXcyNUpwU1ZQZ291bnhtelZDZkMzZ3NkMiIsImlhdCI6MTU5ODM2NDQzNiwiZXhwIjoxNTk4MzY4MDM2LCJlbWFpbCI6ImNoYWxsZW5nZUBjaHVycmFzY28uY2MiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiY2hhbGxlbmdlQGNodXJyYXNjby5jYyJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.UIw_6gwan45Jl4PvWPE_P6BXEPj1R_SVMERev_L98OdGQx25YtyOD6z0D8sMxi_qZSUyKQoIOFpsEIjfwnchm6D9GA8ew1QcfRO3diIAPpqCUYHIrOgohXojzN4nQBnO51CzXVEOfaVwvof6zErc2HL2CIMLOIhDCKY9B5GMrCMXvubjx50WsZVLPUxwHyqNyNc8evf0i9UgEGVLEpzNNbV8hCWcav9ZUrpSfQN455tR1BDyI5WKxX7SZDijzzVzHu3x31uJCIOboWbrHk9gPClujss0cX_97ucHIyHFjh8Fv3Tbl68eUkeCSQgRxSvq9OTX6s0kNl6jMBcG1Axzaw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"descripcion\": \"El frio de barrio jardin es insoportable.\",\n            \"ubicacion\": {\n                \"_long\": -64.19645,\n                \"_lat\": -31.40907\n            },\n            \"nombre\": \"Club Atletico Talleres de Cordoba\",\n            \"url_imagen\": \"https://i.pinimg.com/originals/53/a3/a8/53a3a86cab4854d6917a41247d85856e.png\"\n            }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/sitiosInteres/erFfSY0v87sEnqxE3L56",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sitiosInteres",
+						"erFfSY0v87sEnqxE3L56"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/sitiosInteres/",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/sitiosInteres/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sitiosInteres",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
