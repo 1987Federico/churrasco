@@ -1,3 +1,5 @@
 /node_modules
 package-lock.json
 server/config/config.js
+config.js
+./server/config/config.js
