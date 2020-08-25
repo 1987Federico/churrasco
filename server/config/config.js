@@ -2,6 +2,7 @@
 process.env.PORT = process.env.PORT || 3000;
 //Entorno
 process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
+
 //Firebase
 process.env.API_KEY = process.env.API_KEY || "AIzaSyCr67wg6lFCNMoUkyaS2GvvKcO9QAhCYqE",
 process.env.AUTHDOMAIN = process.env.AUTHDOMAIN || "nodechallenge-424c1.firebaseapp.com",
